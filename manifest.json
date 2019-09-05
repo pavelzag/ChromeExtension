@@ -1,0 +1,23 @@
+{
+   "manifest_version": 2,
+   "name": "JenkinsTriggerExtension",
+   "description": "Just a Jenkins triggering extension",
+   "version": "1",
+   "author": "Pavel Zagalsky",
+  "browser_action": {
+     "default_icon": "chrome.png",
+     "default_title": "Select a city",
+     "default_popup": "popup.html"
+   },
+   "permissions": [
+       "activeTab",
+       "tabs"
+   ],
+   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+   "content_scripts": [
+       {
+           "matches": ["http://*/*", "https://*/*"],
+           "js": ["popup.js"]
+       }
+   ]
+  }

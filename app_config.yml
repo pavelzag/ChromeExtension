@@ -1,0 +1,4 @@
+jenkins_url: http://<jenkins_ip>:<jenkins_port>
+jenkins_user: <api_user>
+jenkins_password: <app_password>
+jenkins_job_name: chrome_extension_job
